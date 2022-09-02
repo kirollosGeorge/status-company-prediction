@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Status App</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="../static/images/icons/uber_icon.png"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/vendor/noui/nouislider.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/css/util.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+
+
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form" action='{{url_for('home')}}' >
+				<span class="contact100-form-title">
+					
+				<p class="main-p">  Company predict status            </p>
+				</span>
+
+
+               <div class="wrap-input100 input100-select bg1">
+					<span class="label-input100">Is Closed *</span>
+					<div>
+						<select class="js-select2" name="Is_Closed">
+							<option value="zero">0</option>
+							<option value="one"   >1</option>
+														
+						</select>
+						<div class="dropDownSelect2"></div>
+					</div>
+				</div>
+				
+				
+				<div class="wrap-input100 input100-select bg1">
+					<span class="label-input100">Category Code*</span>
+					<div>
+						<select class="js-select2" name="Category Code">
+							<option value="advertising">advertising</option>
+							<option value="analytics">analytics</option>
+							<option value="biotech">biotech</option>
+							<option value="cleantech">cleantech</option>
+							<option value="ecommerce">ecommerce</option>
+							<option value="enterprise">enterprise</option>
+							<option value="games_video">games_video</option>
+							<option value="hardware">hardware</option>
+							<option value="health">health</option>
+							<option value="medical">medical</option>
+							<option value="mobile">mobile</option>
+							<option value="other">other</option>
+							<option value="other.1">not found</option>
+							<option value="social">social</option>
+							<option value="software">software</option>
+							<option value="web">web</option>
+							
+								
+						
+						</select>
+						<div class="dropDownSelect2"></div>
+					</div>
+				</div>
+				
+				<div class="wrap-input100 input100-select bg1">
+					<span class="label-input100">Country Code*</span>
+					<div>
+						<select class="js-select2" name="country_code">
+							<option value="CAN" >CAN</option>
+							<option value="CHN">CHN</option>
+							<option value="DEU ">DEU</option>
+							<option value="ESP">ESP</option>
+                            <option value="FRA">FRA</option>
+                            <option value="GBR">GBR</option>	
+                            <option value="IND">IND</option>	
+                            <option value="ISR">ISR</option>
+							<option value="SWE">SWE</option>
+							<option value="USA">USA</option>
+	                        <option value="other.2">other</option>
+	                        <option value="other.3">not found</option>								   
+						</select>
+						<div class="dropDownSelect2"></div>
+					</div>
+				</div>
+				
+				
+
+				<div class="wrap-input100 validate-input bg1 rs1-wrap-input100" data-validate = "Enter Age Day as numerical values">
+					<span class="label-input100">Age_Day  *</span>
+					<input class="input100" type="text" name="Age_Day" placeholder="Enter Age Day as numerical values  ">
+				</div>
+
+				<div class="wrap-input100 validate-input bg1 rs1-wrap-input100" data-validate = "minimum value 1906">
+					<span class="label-input100">Founded At  *</span>
+					<input class="input100" type="text" name="founded_at" placeholder="minimum value 1906 ">
+				</div>
+
+				<div class="wrap-input100 validate-input bg1 rs1-wrap-input100" data-validate = "Enter numerical values ">
+					<span class="label-input100">Funding Total Usd  *</span>
+					<input class="input100" type="text" name="Funding_total_usd" placeholder="Enter numerical values">
+				</div>
+
+				<div class="wrap-input100 validate-input bg1 rs1-wrap-input100" data-validate = "minimum value 1906 ">
+					<span class="label-input100">Last Funding At  *</span>
+					<input class="input100" type="text" name="last_funding_at" placeholder="minimum value 1906 ">
+				</div>
+
+
+				
+
+
+				<div class="container-contact100-form-btn">
+					<button class="contact100-form-btn" type="submit" value="Submit">
+						<span>
+							SUBMIT
+							<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+						</span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+
+<!--===============================================================================================-->
+	<script src="../static/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../static/vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../static/vendor/bootstrap/js/popper.js"></script>
+	<script src="../static/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../static/vendor/select2/select2.min.js"></script>
+	<script>
+		$(".js-select2").each(function(){
+			$(this).select2({
+				minimumResultsForSearch: 20,
+				dropdownParent: $(this).next('.dropDownSelect2')
+			});
+
+
+			$(".js-select2").each(function(){
+				$(this).on('select2:close', function (e){
+					if($(this).val() == "Please chooses") {
+						$('.js-show-service').slideUp();
+					}
+					else {
+						$('.js-show-service').slideUp();
+						$('.js-show-service').slideDown();
+					}
+				});
+			});
+		})
+	</script>
+<!--===============================================================================================-->
+	<script src="../static/vendor/daterangepicker/moment.min.js"></script>
+	<script src="../static/vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="../static/vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="../static/vendor/noui/nouislider.min.js"></script>
+	<script>
+	    var filterBar = document.getElementById('filter-bar');
+
+	    noUiSlider.create(filterBar, {
+	        start: [ 1500, 3900 ],
+	        connect: true,
+	        range: {
+	            'min': 1500,
+	            'max': 7500
+	        }
+	    });
+
+	    var skipValues = [
+	    document.getElementById('value-lower'),
+	    document.getElementById('value-upper')
+	    ];
+
+	    filterBar.noUiSlider.on('update', function( values, handle ) {
+	        skipValues[handle].innerHTML = Math.round(values[handle]);
+	        $('.contact100-form-range-value input[name="from-value"]').val($('#value-lower').html());
+	        $('.contact100-form-range-value input[name="to-value"]').val($('#value-upper').html());
+	    });
+	</script>
+<!--===============================================================================================-->
+	<script src="../static/js/main.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+</body>
+</html>
