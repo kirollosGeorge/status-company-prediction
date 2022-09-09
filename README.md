@@ -155,8 +155,7 @@ model_rf.fit(X, y)
 * accuracy reaching 91%.  
 
 ---  
-## Deployment  
-Our web-app can be accessed through this link :  
+ 
   
 #### Flask  
 A framework that helps create web applications for your models while using simple python code.  
@@ -166,5 +165,5 @@ The app takes the data and predicts based on the classifiers QDA and Random Fore
 ![model](./post.png)  
   
 #### Heroku  
-In order to deploy our model, [Heroku](https://www.heroku.com/) was used. Finally our model is hosted online and can be accessed through this link :
+In order to deploy our model, [Heroku](https://www.heroku.com/) was used. 
 ---  
