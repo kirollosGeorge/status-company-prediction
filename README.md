@@ -165,5 +165,5 @@ The app takes the data and predicts based on the classifiers QDA and Random Fore
 ![model](./post.png)  
   
 #### Heroku  
-In order to deploy our model, [Heroku](https://www.heroku.com/) was used. 
+In order to deploy our model, [Heroku](https://www.heroku.com/) was used.  link: https://startup-acquisition-prediction.herokuapp.com/
 ---  
